@@ -1,9 +1,11 @@
+import java.awt.desktop.SystemSleepEvent;
+
 public class Fabbrica implements Runnable{
     private static final float COSTANTE_VELOCITA=0.1f;
 
     private String nome;
     private float distanzaMagazzino;
-    private float tProduzione;
+    private float tProduzione,timerXProduzione;
     private Thread t;
     private Magazzino mag;
     private Timer clock;
@@ -18,6 +20,7 @@ public class Fabbrica implements Runnable{
         this.clock=clock;
         this.mag=mag;
         this.aereiProdotti=0;
+        this.timerXProduzione=0;
 
         t=new Thread(this);
         t.start();
@@ -40,11 +43,21 @@ public class Fabbrica implements Runnable{
 
     //run
     public void run() {
+        float oldTime=clock.getTime(),newTime;
         //funzionamento thread
         while (clock!=null&&clock.getTime()<Main.durata){
+            //aumento timerXProduzione
+            newTime=clock.getTime();
+            if(!mag.isFull()){
+                timerXProduzione+=newTime-oldTime;
+            }//se il magazzino non e pieno procedo con la produzione
+            //(non previene produzioni simultanee che riempiono il magazzino, aerei extra vengono scartati)
+            oldTime=newTime;
 
-            if((aereiProdotti+1)*tProduzione<clock.getTime()){
+            //eventuale produzione
+            if(timerXProduzione>=tProduzione){
                 producoAereo();
+                timerXProduzione-=tProduzione;
             }
         }
     }

@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e166ddf-c603-460c-acf6-5f6eb1b39629" name="Changes" comment="implementazione produzione e trasporto aerei">
-      <change afterPath="$PROJECT_DIR$/Ente.java" afterDir="false" />
+    <list default="true" id="7e166ddf-c603-460c-acf6-5f6eb1b39629" name="Changes" comment="implementazione consumatori">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fabbrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fabbrica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/Magazzino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +29,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -77,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679770894917</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implementazione consumatori">
+      <created>1679779746796</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679779746796</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +99,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implementazione timer" />
     <MESSAGE value="implementazione produzione e trasporto aerei" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementazione produzione e trasporto aerei" />
+    <MESSAGE value="implementazione consumatori" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementazione consumatori" />
   </component>
 </project>

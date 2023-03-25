@@ -40,8 +40,12 @@ public class Magazzino {
     }
     public synchronized boolean isEmpty(){
         return aerei.size()==0;
-    }
 
+    }
+    public synchronized boolean isFull(){
+        return aerei.size()==maxAerei;
+
+    }
 
 
 
