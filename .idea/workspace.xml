@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e166ddf-c603-460c-acf6-5f6eb1b39629" name="Changes" comment="implementazione timer">
+    <list default="true" id="7e166ddf-c603-460c-acf6-5f6eb1b39629" name="Changes" comment="implementazione produzione e trasporto aerei">
+      <change afterPath="$PROJECT_DIR$/Ente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aereo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Aereo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fabbrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fabbrica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Magazzino.java" beforeDir="false" afterPath="$PROJECT_DIR$/Magazzino.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
@@ -70,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679732276173</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implementazione produzione e trasporto aerei">
+      <created>1679770894917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679770894917</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implementazione timer" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementazione timer" />
+    <MESSAGE value="implementazione produzione e trasporto aerei" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementazione produzione e trasporto aerei" />
   </component>
 </project>

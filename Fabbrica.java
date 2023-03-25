@@ -6,7 +6,6 @@ public class Fabbrica implements Runnable{
     private float tProduzione;
     private Thread t;
     private Magazzino mag;
-    private float timerProduzione;
     private Timer clock;
     private int aereiProdotti;
     private Aereo aTmp;

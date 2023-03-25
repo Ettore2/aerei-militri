@@ -2,12 +2,13 @@ import java.util.ArrayList;
 
 public class Magazzino {
     private ArrayList<Aereo> aerei;
+    int maxAerei;
 
 
     //costruttore
-    public Magazzino(){
+    public Magazzino(int maxAerei){
         aerei=new ArrayList<>();
-
+        this.maxAerei=maxAerei;
     }
 
 
@@ -23,13 +24,19 @@ public class Magazzino {
 
     //altri metodi
     public synchronized void addAereo(Aereo a){
-        aerei.add(a);
+        if(aerei.size()<maxAerei&&a!=null){
+            aerei.add(a);
+        }
+
 
     }
     public synchronized Aereo takeAereo(int indice){
-        Aereo aTmp=aerei.get(indice);
-        aerei.remove(indice);
-        return aTmp;
+        if(!isEmpty()){
+            Aereo aTmp=aerei.get(indice);
+            aerei.remove(indice);
+            return aTmp;
+        }
+        return null;
     }
     public synchronized boolean isEmpty(){
         return aerei.size()==0;
